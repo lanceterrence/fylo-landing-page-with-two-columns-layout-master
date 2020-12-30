@@ -1,9 +1,28 @@
 //Import sub scss files
-@import "sub-scss/responsiveness";
 @import "sub-scss/variables";
+@import "sub-scss/responsiveness";
+@import "sub-scss/1-header";
+@import "sub-scss/2-home";
+@import "sub-scss/3-subHome";
+@import "sub-scss/4-earlyAccess";
+
+//Fonts (Raleway and Open Sans)
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,a,label,span {
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#home, #subHome, #earlyAccess, #footer {
+    display: none;
 }
